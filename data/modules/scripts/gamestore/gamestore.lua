@@ -2244,6 +2244,15 @@ GameStore.Categories = {
           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
         },
         {
+          icons = { "Baby_Polar_Bear.png" },
+          name = "Baby Polar Bear",
+          price = 250,
+          itemtype = 37625,
+          count = 1,
+          description = "{house}\n{box}\n{storeinbox}\n{use}\n{backtoinbox}",
+          type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+        },
+        {
           icons = { "Baby_Rotworm.png" },
           name = "Baby Rotworm",
           price = 150,
@@ -3953,22 +3962,22 @@ GameStore.Categories = {
 		  },
   }, 
 -- Boost
- {   
-   icons = { "Category_Boosts.png" },
-   name = "Boosts",
-   offers = { 
-        {
-          icons = { "XP_Boost.png" },
-          name = "XP Boost",
-          price = 750,
-          id = 65010,
-          description = "<i>Purchase a boost that increases the experience points your character gains from hunting by 50%!</i>\n\n{character}\n{info} lasts for 1 hour hunting time\n{info} paused if stamina falls under 14 hours\n{info} can be purchased up to 5 times between 2 server saves\n{info} price increases with every purchase\n{info} cannot be purchased if an XP boost is already active",
-          type = GameStore.OfferTypes.OFFER_TYPE_EXPBOOST,			
-        },
-      },
-   rookgaard = true,
-   state = GameStore.States.STATE_NONE,
-  },
+--  {   
+--    icons = { "Category_Boosts.png" },
+--    name = "Boosts",
+--    offers = { 
+--         {
+--           icons = { "XP_Boost.png" },
+--           name = "XP Boost",
+--           price = 750,
+--           id = 65010,
+--           description = "<i>Purchase a boost that increases the experience points your character gains from hunting by 50%!</i>\n\n{character}\n{info} lasts for 1 hour hunting time\n{info} paused if stamina falls under 14 hours\n{info} can be purchased up to 5 times between 2 server saves\n{info} price increases with every purchase\n{info} cannot be purchased if an XP boost is already active",
+--           type = GameStore.OfferTypes.OFFER_TYPE_EXPBOOST,			
+--         },
+--       },
+--    rookgaard = true,
+--    state = GameStore.States.STATE_NONE,
+--   },
 -- Extras
  {
    icons = { "Category_Extras.png" },
@@ -4096,21 +4105,20 @@ GameStore.Categories = {
   --  subclasses = {"Tickets", "Exclusive Offers"},
   -- },
   -- Tickets
-	-- {
-  --  icons = { "Category_Tickets.png" },
-  --  parent = "Tournament",   
-  --  name = "Tickets",
-  --  rookgaard = true,
-  --  offers = {	
-  --       {
-  --         icons = { "Tournament_Restricted.png" },
-  --         name = "Restricted Tournament Ticket", 
-  --         price = 500,           
-  --       }, 
-	-- 		},
-  -- }, 
-    -- Exclusive Offers  
---  { 
+-- 	{
+--    icons = { "Category_Tickets.png" },
+--    parent = "Tournament",   
+--    name = "Tickets",
+--    rookgaard = true,
+--    offers = {	
+--         {
+--           icons = { "Tournament_Restricted.png" },
+--           name = "Restricted Tournament Ticket", 
+--           price = 500,           
+--         }, 
+-- 			},
+--  -- Exclusive Offers  
+--  }, { 
 --       icons = { "Category_ExclusiveOffers.png" },
 --       name = "Exclusive Offers",
 --       parent = "Tournament",   
@@ -4120,7 +4128,7 @@ GameStore.Categories = {
 --         {
 --           icons = { "Cerberus_Champion.png" },
 --           name = "Cerberus Champion",
---           price = 1250-GAMESTORE_MOUNT_DISCOUNT,
+--           price = 1250,
 --           id = 146,
 --           description = "{info} usable by all characters of the account\n{speedboost}\n\n<i>A fierce and grim guardian of the underworld has risen to fight side by side with the bravest warriors in order to send evil creatures into the realm of the dead. The three headed Cerberus Champion is constantly baying for blood and using its sharp fangs it easily rips apart even the strongest armour and shield.",
 --           type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
@@ -4129,7 +4137,7 @@ GameStore.Categories = {
 --         {
 --           icons = { "Jousting_Eagle.png" },
 --           name = "Jousting Eagle",
---           price = 1250-GAMESTORE_MOUNT_DISCOUNT,
+--           price = 1250,
 --           id = 145,
 --           description = "{info} usable by all characters of the account\n{speedboost}\n\n<i>High above the clouds far away from dry land, the training of giant eagles takes place. Only the cream of the crop is able to survive in such harsh environment long enough to call themselves Jousting Eagles while the weaklings find themselves at the bottom of the sea. The tough ones become noble and graceful mounts that are well known for their agility and endurance.</i>",
 --           type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
@@ -4138,7 +4146,7 @@ GameStore.Categories = {
 --         {
 --           icons = { "Outfit_Lion_of_War_Male_Addon_3.png", "Outfit_Lion_of_War_Female_Addon_3.png" },
 --           name = "Full Lion of War Outfit",
---           price = 1750-GAMESTORE_OUTFIT_DISCOUNT,
+--           price = 1750,
 --           sexId = {female = 1207, male = 1206},
 --           addon = 3,
 --           description = "{info} usable by all characters of the account\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>The Lion of War has fought on countless battlefields and never lost once. Enemies tremble with fear when he batters his sword against his almighty shield. Realising that a Lion of War knows no mercy, his opponents often surrender before the battle even begins.</i>",
@@ -4148,7 +4156,7 @@ GameStore.Categories = {
 --         {
 --           icons = { "Outfit_Veteran_Paladin_Male_Addon_3.png", "Outfit_Veteran_Paladin_Female_Addon_3.png" },
 --           name = "Full Veteran Paladin Outfit",
---           price = 1750-GAMESTORE_OUTFIT_DISCOUNT,
+--           price = 1750,
 --           sexId = {female = 1205, male = 1204},
 --           addon = 3,
 --           description = "{info} usable by all characters of the account\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>A Veteran Paladin has mastered the art of distance fighting. No matter how far away his prey may be, a marksman like the Veteran Paladin will always hit with extraordinary precision. No one can escape his keen hawk-eyed vision and even small stones become deadly weapons in his hands.</i>",
@@ -4158,7 +4166,7 @@ GameStore.Categories = {
 --         {
 --           icons = { "Outfit_Void_Master_Male_Addon_3.png", "Outfit_Void_Master_Female_Addon_3.png" },
 --           name = "Full Void Master Outfit",
---           price = 1750-GAMESTORE_OUTFIT_DISCOUNT,
+--           price = 1750,
 --           sexId = {female = 1203, male = 1202},
 --           addon = 3,
 --           description = "{info} usable by all characters of the account\n{info} colours can be changed using the Outfit dialog\n{info} includes basic outfit and 2 addons which can be selected individually\n\n<i>According to ancient rumours, the pulsating orb that the Void Master balances skilfully on the tip of his staff consists of powerful cosmic spheres. If you gaze too long into the infinite emptiness inside the orb, its powers will absorb your mind.</i>",
@@ -4224,9 +4232,99 @@ GameStore.Categories = {
 --           description = "{house}\n{box}\n{storeinbox}\n{useicon} use an unwrapped carpet to roll it out or up\n{backtoinbox}",
 --           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
 --           coinType = GameStore.CointType.Tournament,
---         },		
---     },
---   },
+--         },
+--         {
+--           icons = { "Baby_Vulcongra_Accolade.png" },
+--           name = "Baby Vulcongra",
+--           price = 800,
+--           itemtype = 37743,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },    
+--         {
+--           icons = { "Guzzlemaw_Grub.png" },
+--           name = "Guzzlemaw Grub",
+--           price = 800,
+--           itemtype = 37742,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Cozy_Couch.png" },
+--           name = "Cozy Couch",
+--           price = 100,
+--           itemtype = 37783,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Cozy_Couch_Left_End.png" },
+--           name = "Cozy Couch Left End",
+--           price = 100,
+--           itemtype = 37787,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Cozy_Couch_Right_End.png" },
+--           name = "Cozy Couch Right End",
+--           price = 100,
+--           itemtype = 37791,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Cozy_Couch_Corner.png" },
+--           name = "Cozy Couch Corner",
+--           price = 100,
+--           itemtype = 37799,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Baby_Brain_Squid.png" },
+--           name = "Baby Brain Squid",
+--           price = 800,
+--           itemtype = 37744,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Carved_Table.png" },
+--           name = "Carved Table",
+--           price = 100,
+--           itemtype = 37807,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Carved_Table_Centre.png" },
+--           name = "Carved Table Centre",
+--           price = 100,
+--           itemtype = 37809,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+--         {
+--           icons = { "Carved_Table_Corner.png" },
+--           name = "Carved Table Corner",
+--           price = 100,
+--           itemtype = 37804,
+--           count = 1,
+--           description = "{house}\n{box}\n{storeinbox}\n{backtoinbox}",
+--           type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+--         },
+-- 	},
+--  },
 }   
 
 
