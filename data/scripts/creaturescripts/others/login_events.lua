@@ -96,9 +96,11 @@ function loginEvents.onLogin(player)
 		"KeeperKill",
 		"BossesKill",
 		"ZalamonKill",
+
+		--Razgard
 		"AutoLoot",
 		"HourCoin",
-		"Access"
+		"LoginAccess"
 	}
 
 	for i = 1, #events do
