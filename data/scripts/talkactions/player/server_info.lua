@@ -8,7 +8,7 @@ function serverInfo.onSay(player, words, param)
 
 
 	if (configManager.getNumber(configKeys.RATE_EXP) == 1.6) then
-		expRate = 4;
+		expRate = 2;
 	end
 
 	if (configManager.getNumber(configKeys.RATE_SKILL) > 3) then
