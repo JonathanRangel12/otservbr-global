@@ -67,19 +67,20 @@ monster.voices = {
 }
 
 monster.loot = {
-	{id = "platinum coin", chance = 40930, maxCount = 3},
-	{id = "rare earth", chance = 29750, maxCount = 2},
-	{id = 13757, chance = 17980, maxCount = 2}, -- coal
-	{id = "glob of acid slime", chance = 13680},
-	{id = "stonerefiner's skull", chance = 10110},
-	{id = "poisonous slime", chance = 10040, maxCount = 3},
-	{id = "half-digested stones", chance = 15210, maxCount = 3}
+	{id = 13757, chance = 20000, maxCount = 2}, -- coal 20gps
+	{id = "glob of acid slime", chance = 19000}, -- 25
+	{id = "half-digested stones", chance = 18000, maxCount = 3}, -- 40gps
+	{id = "poisonous slime", chance = 17000, maxCount = 3}, -- 50
+	{id = "rare earth", chance = 16000, maxCount = 2}, -- 80gps
+	{id = "stonerefiner's skull", chance = 15000}, -- 100gp
+	{id = "platinum coin", chance = 25000, maxCount = 4},
+	{id = "rat cheese", chance = 15000}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -100},
-	{name ="berserk", interval = 2000, chance = 15, minDamage = 0, maxDamage = -70, target = false},
-	{name ="stone shower", interval = 2000, chance = 10, minDamage = -40, maxDamage = -80, range = 7, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -120},
+	{name ="berserk", interval = 2000, chance = 15, minDamage = -8, maxDamage = -110, target = false},
+	{name ="stone shower", interval = 2000, chance = 10, minDamage = -40, maxDamage = -100, range = 7, target = false}
 }
 
 monster.defenses = {
