@@ -70,17 +70,17 @@ monster.loot = {
 	{id = 13757, chance = 20000, maxCount = 2}, -- coal 20gps
 	{id = "glob of acid slime", chance = 19000}, -- 25
 	{id = "half-digested stones", chance = 18000, maxCount = 3}, -- 40gps
-	{id = "poisonous slime", chance = 17000, maxCount = 3}, -- 50
-	{id = "rare earth", chance = 16000, maxCount = 2}, -- 80gps
-	{id = "stonerefiner's skull", chance = 15000}, -- 100gp
-	{id = "platinum coin", chance = 25000, maxCount = 4},
+	{id = "poisonous slime", chance = 19000, maxCount = 3}, -- 50
+	{id = "rare earth", chance = 21345, maxCount = 2}, -- 80gps
+	{id = "stonerefiner's skull", chance = 22345}, -- 100gp
+	{id = "platinum coin", chance = 25174, maxCount = 4},
 	{id = "rat cheese", chance = 15000}
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -120},
-	{name ="berserk", interval = 2000, chance = 15, minDamage = -8, maxDamage = -110, target = false},
-	{name ="stone shower", interval = 2000, chance = 10, minDamage = -40, maxDamage = -100, range = 7, target = false}
+	{name ="melee", interval = 2000, chance = 100, minDamage = -8, maxDamage = -110},
+	{name ="berserk", interval = 2000, chance = 15, minDamage = -8, maxDamage = -100, target = false},
+	{name ="stone shower", interval = 2000, chance = 10, minDamage = -40, maxDamage = -90, range = 7, target = false}
 }
 
 monster.defenses = {
