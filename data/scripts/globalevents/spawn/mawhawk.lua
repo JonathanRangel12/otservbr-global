@@ -31,5 +31,5 @@ function mawhawk.onThink(interval, lastExecution)
     return true
 end
 
-mawhawk:interval(14399999)
+mawhawk:interval(1439999999)
 mawhawk:register()

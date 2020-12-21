@@ -1,39 +1,39 @@
 local raids = {
 	-- Weekly
 	--Segunda-Feira
-	['Monday'] = {
-		['06:00'] = {raidName = 'RatsThais'},
+	[''] = {
+		[''] = {raidName = 'RatsThais'},
 	},
 
 	--Terça-Feira
-	['Tuesday'] = {
-		['16:00'] = {raidName = 'Midnight Panther'}
+	[''] = {
+		[''] = {raidName = 'Midnight Panther'}
 	},
 
 	--Quarta-Feira
-	['Wednesday'] = {
-		['12:00'] = {raidName = 'Draptor'}
+	[''] = {
+		[''] = {raidName = 'Draptor'}
 	},
 
 	--Quinta-Feira
-	['Thursday'] = {
-		['19:00'] = {raidName = 'Undead Cavebear'}
+	[''] = {
+		[''] = {raidName = 'Undead Cavebear'}
 	},
 
 	--Sexta-feira
-	['Friday'] = {
-		['06:00'] = {raidName = 'Titanica'}
+	[''] = {
+		[''] = {raidName = 'Titanica'}
 	},
 
 	--Sábado
-	['Friday'] = {
-		['20:00'] = {raidName = 'Draptor'}
+	[''] = {
+		[''] = {raidName = 'Draptor'}
 	},
 
 	--Domingo
-	['Friday'] = {
-		['15:00'] = {raidName = 'Midnight Panther'},
-		['13:00'] = {raidName = 'Orc Backpack'}
+	[''] = {
+		[''] = {raidName = 'Midnight Panther'},
+		[''] = {raidName = 'Orc Backpack'}
 	},
 
 	-- By date (Day/Month)
@@ -67,5 +67,5 @@ function spawnRaids.onThink(interval, lastExecution, thinkInterval)
 	return true
 end
 
-spawnRaids:interval(60000)
+spawnRaids:interval(6000000)
 spawnRaids:register()

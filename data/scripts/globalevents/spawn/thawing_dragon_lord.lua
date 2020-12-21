@@ -30,5 +30,5 @@ function thawingDragonLord.onThink(interval, lastExecution)
     boss:setReward(true)
     return true
 end
-thawingDragonLord:interval(900000)
+thawingDragonLord:interval(9000000)
 thawingDragonLord:register()
