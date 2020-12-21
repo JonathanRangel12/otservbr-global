@@ -73,7 +73,7 @@ monster.loot = {
 	{id = "great spirit potion", chance = 2010},
 	{id = "ultimate health potion", chance = 750},
 	{id = "belted cape", chance = 580},
-	{id = "paladin armor", chance = 140},
+	{id = "paladin armor", chance = 580},
 	{id = "springsprout rod", chance = 1020},
 	{id = "boggy dreads", chance = 9870}
 }
