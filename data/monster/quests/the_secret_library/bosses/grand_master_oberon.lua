@@ -130,22 +130,22 @@ monster.loot = {
 	{id = "brass shield", chance = 30000, maxCount = 1}, --comum
 	{id = "spatial warp almanac", chance = 25000, maxCount = 1}, --comum
 	{id = "viking helmet", chance = 23000, maxCount = 1}, --comum
-	{id = "Falcon Battleaxe", chance = 500, maxCount = 1}, --semiraro
-	{id = "Falcon Longsword", chance = 500, maxCount = 1},--semiraro
-	{id = "Falcon Mace", chance = 500, maxCount = 1},--semiraro
-	{id = "Grant of Arms", chance = 500, maxCount = 1},--semiraro
-	{id = "Falcon Bow", chance = 350, maxCount = 1},--raro
-	{id = "Falcon Circlet", chance = 350, maxCount = 1},--raro
-	{id = "Falcon Coif", chance = 350, maxCount = 1},--raro
-	{id = "Falcon Rod", chance = 350, maxCount = 1},--raro
-	{id = "Falcon wand", chance = 350, maxCount = 1},--raro
-	{id = "Falcon Shield", chance = 200, maxCount = 1},--muito raro
-	{id = "Falcon Greaves", chance = 200, maxCount = 1},--muito raro
-	{id = "Falcon Plate", chance = 200, maxCount = 1},--muito raro
+	{id = "Falcon Battleaxe", chance = 600, maxCount = 1}, --semiraro
+	{id = "Falcon Longsword", chance = 600, maxCount = 1},--semiraro
+	{id = "Falcon Mace", chance = 600, maxCount = 1},--semiraro
+	{id = "Grant of Arms", chance = 600, maxCount = 1},--semiraro
+	{id = "Falcon Bow", chance = 450, maxCount = 1},--raro
+	{id = "Falcon Circlet", chance = 450, maxCount = 1},--raro
+	{id = "Falcon Coif", chance = 450, maxCount = 1},--raro
+	{id = "Falcon Rod", chance = 450, maxCount = 1},--raro
+	{id = "Falcon wand", chance = 450, maxCount = 1},--raro
+	{id = "Falcon Shield", chance = 300, maxCount = 1},--muito raro
+	{id = "Falcon Greaves", chance = 300, maxCount = 1},--muito raro
+	{id = "Falcon Plate", chance = 300, maxCount = 1},--muito raro
 }
 
 monster.attacks = {
-	{name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1200},
+	{name ="melee", interval = 2000, chance = 100, minDamage = -20, maxDamage = -1200},
 	{name ="combat", interval = 6000, chance = 80, type = COMBAT_HOLYDAMAGE, minDamage = -1000, maxDamage = -2250, length = 8, spread = 3, effect = CONST_ME_HOLYAREA, target = false},
 	{name ="combat", interval = 1000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -820, maxDamage = -1450, radius = 5, effect = CONST_ME_HITAREA, target = false},
 	{name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -860, maxDamage = -1500, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = false}
