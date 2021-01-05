@@ -232,16 +232,27 @@ Item* Player::getWeapon(slots_t slot, bool ignoreAmmo) const
 		return nullptr;
 	}
 
-	if (!ignoreAmmo && weaponType == WEAPON_DISTANCE) {
+  if (!ignoreAmmo && weaponType == WEAPON_DISTANCE) {
 		const ItemType& it = Item::items[item->getID()];
 		if (it.ammoType != AMMO_NONE) {
-			Item* ammoItem = inventory[CONST_SLOT_AMMO];
-			if (!ammoItem || ammoItem->getAmmoType() != it.ammoType) {
+			Item* quiver = inventory[CONST_SLOT_RIGHT];
+		if (!quiver || quiver->getWeaponType() != WEAPON_QUIVER)
 				return nullptr;
-			}
-			item = ammoItem;
-		}
-	}
+       Container* container = quiver->getContainer();
+    if (!container)
+         return nullptr;
+       bool found = false;
+      for (Item* ammoItem : container->getItemList()) {
+    if (ammoItem->getAmmoType() == it.ammoType) {
+          item = ammoItem;
+          found = true;
+          break;
+        }
+      }
+     if (!found)
+        return nullptr;
+    }
+  }
 	return item;
 }
 
