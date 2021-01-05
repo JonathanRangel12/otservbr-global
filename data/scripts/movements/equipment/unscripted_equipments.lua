@@ -14518,7 +14518,87 @@ if not equipmentsTable then
 			itemid = 1294,
 			type = "deequip",
 			slot = "hand"
-		} -- small stone
+		}, -- small stone
+		{
+			itemid = 40359,
+			type = "equip",
+			slot = "right-hand",
+			vocation = {
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- jungle quiver
+		{
+			itemid = 40359,
+			type = "deequip",
+			slot = "right-hand",
+			level = 150,
+			vocation = {
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- jungle quiver
+		{
+			itemid = 40397,
+			type = "equip",
+			slot = "right-hand",
+			level = 150,
+			vocation = {
+				{"None", true},
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- quiver
+		{
+			itemid = 40397,
+			type = "deequip",
+			slot = "right-hand",
+			vocation = {
+				{"None", true},
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- quiver
+		{
+			itemid = 40683,
+			type = "equip",
+			slot = "right-hand",
+			vocation = {
+				{"None", true},
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- blue quiver
+		{
+			itemid = 40683,
+			type = "deequip",
+			slot = "right-hand",
+			vocation = {
+				{"None", true},
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- blue quiver
+		{
+			itemid = 40684,
+			type = "equip",
+			slot = "right-hand",
+			vocation = {
+				{"None", true},
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- red quiver
+		{
+			itemid = 40684,
+			type = "deequip",
+			slot = "right-hand",
+			vocation = {
+				{"None", true},
+				{"Paladin", true, true},
+				{"Royal Paladin"}
+			}
+		}, -- red quiver
 	}
 end
 
